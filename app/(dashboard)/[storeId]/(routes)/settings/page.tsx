@@ -1,7 +1,7 @@
 const SettingsPage = () => {
     return ( 
         <div>
-            Hello Settings
+            Hello Settings Updated
         </div>
      );
 }
