@@ -1,23 +1,21 @@
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import { useParams } from "next/navigation";
 
-import { useStoreModal } from '@/hooks/use-store-modal';
+import { useStoreModal } from "@/hooks/use-store-modal";
 
-const Home = () => {
-  
-  // Add Categories form states { Open Close } 
+const SetupPage = () => {
   const onOpen = useStoreModal((state) => state.onOpen);
   const isOpen = useStoreModal((state) => state.isOpen);
 
   useEffect(() => {
-    if(!isOpen){
+    if (!isOpen) {
       onOpen();
     }
   }, [isOpen, onOpen]);
 
-  // Display on Page
   return null;
-}
-
-export default Home;
+};
+ 
+export default SetupPage;
